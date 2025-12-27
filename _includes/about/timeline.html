@@ -1,30 +1,5 @@
 <div class="col mt-4">
-  <div class="timeline-body bg-themed">
-    {% for item in site.data.timeline %}
-      <div class="timeline-item">
-        <div class="content">
-          {% if item.title.pt %}
-            <h2 data-lang-pt="{{ item.title.pt }}" data-lang-en="{{ item.title.en }}">{{ item.title.pt }}</h2>
-          {% else %}
-            <h2>{{ item.title }}</h2>
-          {% endif %}
-
-          <h6 class="date">
-            {{ item.from }} —
-            {% if item.to.pt %}
-              <span data-lang-pt="{{ item.to.pt }}" data-lang-en="{{ item.to.en }}">{{ item.to.pt }}</span>
-            {% else %}
-              {{ item.to }}
-            {% endif %}
-          </h6>
-
-          {% if item.description.pt %}
-            <p data-lang-pt="{{ item.description.pt }}" data-lang-en="{{ item.description.en }}">{{ item.description.pt }}</p>
-          {% else %}
-            <p>{{ item.description }}</p>
-          {% endif %}
-        </div>
-      </div>
-    {% endfor %}
+  <div class="timeline-body bg-themed" id="timeline-container">
+    <!-- Timeline will be rendered by JavaScript -->
   </div>
 </div>

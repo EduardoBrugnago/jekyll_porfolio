@@ -1,0 +1,7 @@
+---
+layout: null
+---
+{
+  "programming": {{ site.data.programming-skills | jsonify }},
+  "other": {{ site.data.other-skills | jsonify }}
+}

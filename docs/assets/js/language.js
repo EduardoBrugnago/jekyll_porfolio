@@ -54,7 +54,7 @@ const translations = {
 let currentLang = localStorage.getItem('language') || 'pt';
 
 // Function to update all translations on the page
-function updateTranslations(lang) {
+async function updateTranslations(lang) {
   // Update elements with data-i18n
   const elements = document.querySelectorAll('[data-i18n]');
   elements.forEach(element => {
@@ -71,21 +71,129 @@ function updateTranslations(lang) {
     }
   });
 
-  // Update skills and timeline with data-lang attributes
-  updateSkillsAndTimeline(lang);
+  // Update skills and timeline
+  await updateSkillsAndTimeline(lang);
 
   // Update language toggle button
   updateLanguageButton(lang);
 }
 
-// Function to update skills and timeline based on language
-function updateSkillsAndTimeline(lang) {
-  // Update elements with data-lang-pt and data-lang-en
-  document.querySelectorAll('[data-lang-pt]').forEach(element => {
-    const ptValue = element.getAttribute('data-lang-pt');
-    const enValue = element.getAttribute('data-lang-en');
-    element.textContent = lang === 'pt' ? ptValue : enValue;
+// Data caches
+let skillsData = null;
+let timelineData = null;
+
+// Function to load skills data
+async function loadSkillsData() {
+  if (!skillsData) {
+    try {
+      const response = await fetch('/assets/data/skills.json');
+      if (!response.ok) {
+        console.error('Failed to load skills.json:', response.status);
+        return null;
+      }
+      skillsData = await response.json();
+      console.log('Skills data loaded:', skillsData);
+    } catch (error) {
+      console.error('Error loading skills:', error);
+      return null;
+    }
+  }
+  return skillsData;
+}
+
+// Function to load timeline data
+async function loadTimelineData() {
+  if (!timelineData) {
+    try {
+      const response = await fetch('/assets/data/timeline.json');
+      if (!response.ok) {
+        console.error('Failed to load timeline.json:', response.status);
+        return null;
+      }
+      timelineData = await response.json();
+      console.log('Timeline data loaded:', timelineData);
+    } catch (error) {
+      console.error('Error loading timeline:', error);
+      return null;
+    }
+  }
+  return timelineData;
+}
+
+// Function to render skills
+function renderSkills(skills, container, lang) {
+  container.innerHTML = '';
+  skills.forEach(skill => {
+    const skillName = skill.name?.pt ? skill.name[lang] : skill.name;
+    const skillExperience = skill.experience?.pt ? skill.experience[lang] : skill.experience;
+
+    const skillHTML = `
+      <div class="row justify-content-between align-items-center mb-3">
+        <div class="col-8">
+          <p class="mb-0"><i class="${skill.icon}"></i> ${skillName}</p>
+        </div>
+        <div class="col-4 text-right">
+          <p class="mb-0 text-muted">${skillExperience}</p>
+        </div>
+      </div>
+    `;
+    container.innerHTML += skillHTML;
   });
+}
+
+// Function to render timeline
+function renderTimeline(timeline, container, lang) {
+  container.innerHTML = '';
+  timeline.forEach(item => {
+    const title = item.title?.pt ? item.title[lang] : item.title;
+    const description = item.description?.pt ? item.description[lang] : item.description;
+    const to = item.to?.pt ? item.to[lang] : item.to;
+
+    const timelineHTML = `
+      <div class="timeline-item">
+        <div class="content">
+          <h2>${title}</h2>
+          <h6 class="date">${item.from} — ${to}</h6>
+          <p>${description}</p>
+        </div>
+      </div>
+    `;
+    container.innerHTML += timelineHTML;
+  });
+}
+
+// Function to update skills and timeline based on language
+async function updateSkillsAndTimeline(lang) {
+  console.log('updateSkillsAndTimeline called with lang:', lang);
+
+  // Render skills
+  const skillContainers = document.querySelectorAll('[data-skill-type]');
+  console.log('Found skill containers:', skillContainers.length);
+
+  if (skillContainers.length > 0) {
+    const skills = await loadSkillsData();
+    if (skills) {
+      skillContainers.forEach(container => {
+        const type = container.getAttribute('data-skill-type');
+        const skillsContainer = container.querySelector('.skills-container');
+        console.log('Rendering skills for type:', type, 'Container found:', !!skillsContainer);
+        if (skillsContainer && skills[type]) {
+          renderSkills(skills[type], skillsContainer, lang);
+        }
+      });
+    }
+  }
+
+  // Render timeline
+  const timelineContainer = document.getElementById('timeline-container');
+  console.log('Timeline container found:', !!timelineContainer);
+
+  if (timelineContainer) {
+    const timeline = await loadTimelineData();
+    if (timeline) {
+      renderTimeline(timeline, timelineContainer, lang);
+    }
+  }
 }
 
 // Function to update language toggle button

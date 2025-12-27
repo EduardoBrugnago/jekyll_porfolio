@@ -1,16 +1,4 @@
-<div class="col-lg">
+<div class="col-lg" data-skill-type="{{ include.type }}">
   <h2 class="mb-3">{{ include.title }}</h2>
-
-  {% for skill in include.source %}
-
-  <div class="skill-item d-flex align-items-center mb-3">
-    <div>
-      <i class="{{ skill.icon }} fa-lg mr-3" style="color: #ffadad"></i>
-      <span class="skill-name">{{ skill.name }}</span>
-    </div>
-
-    <span class="skill-experience ">{{ skill.experience }}</span>
-  </div>
-
-  {% endfor %}
+  <div class="skills-container"></div>
 </div>

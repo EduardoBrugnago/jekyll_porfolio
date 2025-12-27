@@ -14,8 +14,8 @@ weight: 3
 <p data-i18n="about.intro_p2">Meu diferencial é a versatilidade entre desenvolvimento web, mobile e jogos, com habilidade para adaptação e rápida absorção de novas tecnologias para necessidades específicas de cada projeto. Sou apaixonado por inovação e desafios, busco sempre conhecer bem cada área no desenvolvimento de jogos e web pra facilitar a comunicação e ter uma noção melhor de escopo na hora de planejar e desenvolver.</p>
 
 <div class="row">
-{% include about/skills.html title="<span data-i18n='about.game_dev_skills'>Game Dev. Skills</span>" source=site.data.other-skills %}
-{% include about/skills.html title="<span data-i18n='about.programming_skills'>Programming Skills</span>" source=site.data.programming-skills %}
+{% include about/skills.html title="<span data-i18n='about.game_dev_skills'>Game Dev. Skills</span>" type="other" %}
+{% include about/skills.html title="<span data-i18n='about.programming_skills'>Programming Skills</span>" type="programming" %}
 </div>
 
 <div class="row">
