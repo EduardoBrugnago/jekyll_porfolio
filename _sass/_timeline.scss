@@ -28,7 +28,8 @@
       position: absolute;
       left: -12px;
       top: 8px;
-      z-index: 10;
+      z-index: 200;
+      transform: translateZ(0);
     }
 
     .content {
