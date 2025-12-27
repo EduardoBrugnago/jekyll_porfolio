@@ -1,0 +1,36 @@
+- name: TypeScript
+  icon: fab fa-js
+  experience:
+    pt: "5 anos"
+    en: "5 years"
+
+- name: ReactJS
+  icon: fab fa-react
+  experience:
+    pt: "5 anos"
+    en: "5 years"
+
+- name: C#
+  icon: fas fa-code
+  experience:
+    pt: "5 anos"
+    en: "5 years"
+
+- name: Java
+  icon: fab fa-java
+  experience:
+    pt: "2 anos"
+    en: "2 years"
+
+- name: HTML5/CSS3
+  icon: fab fa-html5
+  experience:
+    pt: "5 anos"
+    en: "5 years"
+
+- name: Git
+  icon: fab fa-git-alt
+  experience:
+    pt: "5 anos"
+    en: "5 years"
+

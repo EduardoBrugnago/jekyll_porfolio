@@ -1,0 +1,37 @@
+- title:
+    pt: "Bacharel em Design de Jogos e Entretenimento Digital, Universidade do Vale do Itajaí"
+    en: "Bachelor's Degree in Game Design and Digital Entertainment, University of Vale do Itajaí"
+  from: 2017
+  to: 2021
+  description:
+    pt: "TCC - A Categorização do Subgênero Terror de Sobrevivência Através das Mecânicas."
+    en: "Thesis - The Categorization of the Survival Horror Subgenre Through Mechanics."
+
+- title:
+    pt: "Estágio Designer, Universidade Federal de Santa Catarina"
+    en: "Designer Intern, Federal University of Santa Catarina"
+  from: 2019
+  to: 2019
+  description:
+    pt: "Participava de reuniões de planejamento e brainstorming para o desenvolvimento da versão digital e física do jogo Comenius. Atuei projetando o protótipo do jogo de tabuleiro Comenius e na ilustração de alguns personagens e ícones da versão digital e física."
+    en: "Participated in planning and brainstorming meetings for the development of the digital and physical version of the Comenius game. I worked on designing the Comenius board game prototype and illustrating some characters and icons for the digital and physical versions."
+
+- title:
+    pt: "Desenvolvedor Front-End, Palmsoft"
+    en: "Front-End Developer, Palmsoft"
+  from: 2022
+  to: 2024
+  description:
+    pt: "Experiência com desenvolvimento de aplicações web e mobile utilizando ReactJS, React Native e TypeScript, com uso de bibliotecas como Context API, Next.js e Material UI. Forte conhecimento em integração com APIs REST, para aplicações escaláveis e de alta performance. Participação em projetos para empresas como Tigre, CTG Brasil, Amcred e ACATE, atuando no desenvolvimento de soluções digitais alinhadas às necessidades de cada cliente."
+    en: "Experience with web and mobile application development using ReactJS, React Native, and TypeScript, with libraries such as Context API, Next.js, and Material UI. Strong knowledge in REST API integration for scalable and high-performance applications. Participation in projects for companies such as Tigre, CTG Brasil, Amcred, and ACATE, working on the development of digital solutions aligned with each client's needs."
+
+- title:
+    pt: "Desenvolvedor Full Stack Pleno, Palmsoft"
+    en: "Mid-Level Full Stack Developer, Palmsoft"
+  from: 2024
+  to:
+    pt: "Atualmente"
+    en: "Currently"
+  description:
+    pt: "Experiência em desenvolvimento back-end com Java, utilizando Spring Boot. Além disso tenho participação em projetos de desenvolvimento de jogos, utilizando Netty para o desenvolvimento do servidor. No front-end, atuação com ReactJS, React Native, TypeScript e Godot."
+    en: "Experience in back-end development with Java, using Spring Boot. Additionally, I participate in game development projects, using Netty for server development. On the front-end, working with ReactJS, React Native, TypeScript, and Godot."

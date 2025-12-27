@@ -1,0 +1,124 @@
+<style>
+/* Force override all primary colors to pink - loaded last */
+/* SUPER SPECIFIC for post cards */
+a.post.card.bg-primary,
+.post.card.bg-primary,
+a.card.bg-primary,
+.card.bg-primary,
+div.bg-primary,
+.bg-primary {
+  background-color: #ffadad !important;
+  border-color: #ffadad !important;
+}
+
+/* White text for cards with bg-primary */
+a.post.card.bg-primary,
+.post.card.bg-primary,
+a.card.bg-primary .card-body,
+.card.bg-primary .card-body {
+  color: white !important;
+}
+
+/* Keep heading and text white */
+a.post.card.bg-primary h3,
+.post.card.bg-primary h3,
+.card.bg-primary .card-title,
+.card.bg-primary .card-text,
+.card.bg-primary p {
+  color: white !important;
+}
+
+/* Override Bootstrap's compiled bg-primary */
+.bg-primary:not(.btn) {
+  background-color: #ffadad !important;
+}
+
+.badge-primary,
+.btn-primary {
+  background-color: #ffadad !important;
+  border-color: #ffadad !important;
+  color: white !important;
+}
+
+.border-primary {
+  border-color: #ffadad !important;
+}
+
+
+
+/* Badge text should be white */
+.badge.text-primary {
+  color: #ffadad !important;
+}
+
+/* Transparent backgrounds for nested elements */
+.bg-primary .card-body,
+.card.bg-primary .card-body,
+a.post.card.bg-primary .card-body,
+.post.card.bg-primary .card-body {
+  background-color: transparent !important;
+}
+
+/* Force hover states */
+a.post.card.bg-primary:hover,
+.post.card.bg-primary:hover,
+a.card.bg-primary:hover,
+.card.bg-primary:hover {
+  background-color: #ff9090 !important;
+}
+
+/* Card footer for primary cards */
+.card.bg-primary,
+a.post.card.bg-primary {
+  background-color: rgba(255, 173, 173, 0.85) !important;
+  border-top-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+
+a::after:not(.bg-primary *),
+.py-3 a::after,
+ol a::after {
+  background: #ffadad !important;
+}
+
+a:hover::after {
+  background: #ff9090 !important;
+}
+
+/* Tags inside bg-primary cards should be light */
+.bg-primary .badge,
+.card.bg-primary .badge {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border-color: white !important;
+}
+
+/* Button primary */
+.btn-primary,
+.btn-outline-primary {
+  background-color: #ffadad !important;
+  border-color: #ffadad !important;
+}
+
+.btn-outline-primary {
+  color: #ffadad !important;
+  background-color: transparent !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #ffadad !important;
+  color: white !important;
+}
+
+/* NUCLEAR OPTION - Override using attribute selector for maximum specificity */
+a[class*="bg-primary"],
+div[class*="bg-primary"],
+[class*="post"][class*="card"][class*="bg-primary"] {
+  background-color: #ffadad !important;
+}
+
+/* Make sure the card itself is pink */
+.wow.animated.fadeIn a.post.card.bg-primary {
+  background-color: #ffadad !important;
+}
+</style>

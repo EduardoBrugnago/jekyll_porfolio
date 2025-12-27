@@ -1,0 +1,38 @@
+- name: Game Design
+  icon: fas fa-gamepad
+  experience:
+    pt: "8 anos"
+    en: "8 years"
+
+- name: Unity
+  icon: fab fa-unity
+  experience:
+    pt: "8 anos"
+    en: "8 years"
+
+- name:
+    pt: "Excel e Word"
+    en: "Excel and Word"
+  icon: fas fa-file-excel
+  experience:
+    pt: "8 anos"
+    en: "8 years"
+
+- name: Scrum/Agile
+  icon: fas fa-project-diagram
+  experience:
+    pt: "5 anos"
+    en: "5 years"
+
+- name: Adobe Photoshop
+  icon: fas fa-palette
+  experience:
+    pt: "10 anos"
+    en: "10 years"
+
+- name: Godot
+  icon: fas fa-cube
+  experience:
+    pt: "2 anos"
+    en: "2 years"
+

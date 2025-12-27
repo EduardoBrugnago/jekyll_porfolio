@@ -1,0 +1,59 @@
+pt:
+  nav:
+    about: "Sobre"
+    projects: "Projetos"
+    blog: "Blog"
+  footer:
+    coded_with: "com"
+    by: "por"
+    theme: "tema"
+  landing:
+    description: "Designer de jogos e desenvolvedor Full Stack. Apaixonado por criar jogos e experiências digitais incríveis."
+  about:
+    title: "Sobre Mim"
+    greeting: "Oi eu sou o"
+    intro_p1: "Sou bacharel em Design de Jogos, com experiência prática como programador e game designer. Possuo conhecimentos em desenvolvimento de back-end com Java (Spring Boot, Node e Netty) e front-end com CSS, HTML e TypeScript (ReactJS, React Native), além de desenvolvimento de jogos com Unity e Godot. Tenho experiência com metodologias ágeis, treinamento e orientação de estagiários e profissionais juniores."
+    intro_p2: "Meu diferencial é a versatilidade entre desenvolvimento web, mobile e jogos, com habilidade para adaptação e rápida absorção de novas tecnologias para necessidades específicas de cada projeto. Sou apaixonado por inovação e desafios, busco sempre conhecer bem cada área no desenvolvimento de jogos e web pra facilitar a comunicação e ter uma noção melhor de escopo na hora de planejar e desenvolver."
+    game_dev_skills: "Game Dev. Skills"
+    programming_skills: "Programming Skills"
+    years: "anos"
+    timeline:
+      degree_title: "Bacharel em Design de Jogos e Entretenimento Digital, Universidade do Vale do Itajaí"
+      degree_desc: "TCC - A Categorização do Subgênero Terror de Sobrevivência Através das Mecânicas."
+      intern_title: "Estágio Designer, Universidade Federal de Santa Catarina"
+      intern_desc: "Participava de reuniões de planejamento e brainstorming para o desenvolvimento da versão digital e física do jogo Comenius. Atuei projetando o protótipo do jogo de tabuleiro Comenius e na ilustração de alguns personagens e ícones da versão digital e física."
+      frontend_title: "Desenvolvedor Front-End, Palmsoft"
+      frontend_desc: "Experiência com desenvolvimento de aplicações web e mobile utilizando ReactJS, React Native e TypeScript, com uso de bibliotecas como Context API, Next.js e Material UI. Forte conhecimento em integração com APIs REST, para aplicações escaláveis e de alta performance. Participação em projetos para empresas como Tigre, CTG Brasil, Amcred e ACATE, atuando no desenvolvimento de soluções digitais alinhadas às necessidades de cada cliente."
+      fullstack_title: "Desenvolvedor Full Stack Pleno, Palmsoft"
+      fullstack_desc: "Experiência em desenvolvimento back-end com Java, utilizando Spring Boot. Além disso tenho participação em projetos de desenvolvimento de jogos, utilizando Netty para o desenvolvimento do servidor. No front-end, atuação com ReactJS, React Native, TypeScript e Godot."
+      currently: "Atualmente"
+
+en:
+  nav:
+    about: "About"
+    projects: "Projects"
+    blog: "Blog"
+  footer:
+    coded_with: "with"
+    by: "by"
+    theme: "theme"
+  landing:
+    description: "Game designer and Full Stack developer.\n Passionate about creating amazing games and digital experiences."
+  about:
+    title: "About Me"
+    greeting: "Hi, I'm"
+    intro_p1: "I have a bachelor's degree in Game Design, with practical experience as a programmer and game designer. I have knowledge in back-end development with Java (Spring Boot, Node, and Netty) and front-end with CSS, HTML, and TypeScript (ReactJS, React Native), as well as game development with Unity and Godot. I have experience with agile methodologies, training and mentoring interns and junior professionals."
+    intro_p2: "My strength is versatility across web, mobile, and game development, with the ability to adapt and quickly absorb new technologies for the specific needs of each project. I'm passionate about innovation and challenges, always seeking to understand each area of game and web development well to facilitate communication and have a better sense of scope when planning and developing."
+    game_dev_skills: "Game Dev. Skills"
+    programming_skills: "Programming Skills"
+    years: "years"
+    timeline:
+      degree_title: "Bachelor's Degree in Game Design and Digital Entertainment, University of Vale do Itajaí"
+      degree_desc: "Thesis - The Categorization of the Survival Horror Subgenre Through Mechanics."
+      intern_title: "Designer Intern, Federal University of Santa Catarina"
+      intern_desc: "Participated in planning and brainstorming meetings for the development of the digital and physical version of the Comenius game. I worked on designing the Comenius board game prototype and illustrating some characters and icons for the digital and physical versions."
+      frontend_title: "Front-End Developer, Palmsoft"
+      frontend_desc: "Experience with web and mobile application development using ReactJS, React Native, and TypeScript, with libraries such as Context API, Next.js, and Material UI. Strong knowledge in REST API integration for scalable and high-performance applications. Participation in projects for companies such as Tigre, CTG Brasil, Amcred, and ACATE, working on the development of digital solutions aligned with each client's needs."
+      fullstack_title: "Mid-Level Full Stack Developer, Palmsoft"
+      fullstack_desc: "Experience in back-end development with Java, using Spring Boot. Additionally, I participate in game development projects, using Netty for server development. On the front-end, working with ReactJS, React Native, TypeScript, and Godot."
+      currently: "Currently"

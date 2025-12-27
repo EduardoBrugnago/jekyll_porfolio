@@ -1,0 +1,221 @@
+.rounded-square-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pt-8 {
+  padding-top: 80px !important;
+}
+
+.navbar-brand::after,
+.nav-link::after {
+  background: #ffadad !important;
+}
+
+#language-toggler {
+  cursor: pointer;
+  user-select: none;
+}
+
+// Override all blue colors with pink
+a {
+  color: #ffadad;
+
+  &:hover {
+    color: #ff9090;
+  }
+}
+
+.btn-primary {
+  background-color: #ffadad !important;
+  border-color: #ffadad !important;
+
+  &:hover {
+    background-color: #ff9090 !important;
+    border-color: #ff9090 !important;
+  }
+}
+
+.btn-outline-primary {
+  color: #ffadad !important;
+  border-color: #ffadad !important;
+
+  &:hover {
+    background-color: #ffadad !important;
+    border-color: #ffadad !important;
+    color: white !important;
+  }
+}
+
+.badge-primary {
+  background-color: #ffadad !important;
+}
+
+// Project tags
+.text-primary {
+  color: #ffadad !important;
+}
+
+.border-primary {
+  border-color: #ffadad !important;
+}
+
+.bg-primary {
+  background-color: #ffadad !important;
+}
+
+// Override Bootstrap primary color classes
+.badge-pill.text-primary {
+  color: #ffadad !important;
+  border-color: #ffadad !important;
+}
+
+// Input group with primary colors
+.input-group-text.bg-primary {
+  background-color: #ffadad !important;
+  border-color: #ffadad !important;
+}
+
+// Blog post cards with primary color - FORCE PINK!
+.post.card.bg-primary,
+.card.bg-primary,
+a.card.bg-primary,
+div.card.bg-primary {
+  background-color: #ffadad !important;
+
+  .card-body {
+    background-color: transparent !important;
+  }
+}
+
+// List items with primary
+.list-group-item-primary {
+  background-color: #ffadad !important;
+  border-color: #ffadad !important;
+}
+
+// Alert primary
+.alert-primary {
+  background-color: #ffadad !important;
+  border-color: #ffadad !important;
+}
+
+// Tag hover effect
+.tag:hover {
+  background-color: #ffadad !important;
+}
+
+// Nav item active
+.nav-item.active::after {
+  background: #ffadad !important;
+}
+
+// All Bootstrap primary variants
+.badge-primary {
+  background-color: #ffadad !important;
+}
+
+.table-primary,
+.table-primary > th,
+.table-primary > td {
+  background-color: #ffadad !important;
+}
+
+// Markdown links
+article a::after,
+.markdown a::after {
+  background: #ffadad !important;
+}
+
+// Override any remaining primary colors
+*[class*="primary"] {
+  --primary: #ffadad !important;
+}
+
+// Force all card-body links to be pink
+.card-body a,
+.card-body,
+.post .card-body {
+  color: #ffadad !important;
+
+  a {
+    color: #ffadad !important;
+
+    &::after {
+      background: #ffadad !important;
+    }
+
+    &:hover {
+      color: #ff9090 !important;
+    }
+  }
+}
+
+// Force post cards hover and background
+.post.card:hover,
+a.post.card:hover {
+  border-color: #ffadad !important;
+
+  .card-body {
+    background-color: transparent !important;
+  }
+}
+
+// Override all link underlines
+a::after {
+  background: #ffadad !important;
+}
+
+// Tags page links
+.py-3 a {
+  color: #ffadad !important;
+
+  &::after {
+    background: #ffadad !important;
+  }
+
+  &:hover {
+    color: #ff9090 !important;
+  }
+}
+
+// Skills section
+.skill-item {
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  justify-content: space-between ;
+  &:hover {
+    background-color: rgba(255, 173, 173, 0.1);
+    transform: translateX(5px);
+  }
+
+  i {
+    transition: transform 0.3s ease;
+    min-width: 30px;
+  }
+
+  &:hover i {
+    transform: scale(1.2);
+  }
+
+  .skill-name {
+    font-weight: 500;
+    margin-right: 15px;
+  }
+
+  .skill-line {
+    border-bottom: 2px dotted #ffadad;
+    margin: 0 10px;
+    opacity: 0.5;
+  }
+
+  .skill-experience {
+    font-size: 0.9rem;
+    white-space: nowrap;
+    margin-left: 10px;
+  }
+}
