@@ -12,15 +12,15 @@ const translations = {
       theme: "tema"
     },
     landing: {
-      description: "Designer de jogos e desenvolvedor Full Stack. Apaixonado por criar jogos e experiências digitais incríveis."
+      description: "Designer de jogos e desenvolvedor Full Stack. Apaixonado por criar jogos e experiências digitais."
     },
     about: {
       title: "Sobre Mim",
       greeting: "Oi eu sou o",
       intro_p1: "Sou bacharel em Design de Jogos, com experiência prática como programador e game designer. Possuo conhecimentos em desenvolvimento de back-end com Java (Spring Boot, Node e Netty) e front-end com CSS, HTML e TypeScript (ReactJS, React Native), além de desenvolvimento de jogos com Unity e Godot. Tenho experiência com metodologias ágeis, treinamento e orientação de estagiários e profissionais juniores.",
       intro_p2: "Meu diferencial é a versatilidade entre desenvolvimento web, mobile e jogos, com habilidade para adaptação e rápida absorção de novas tecnologias para necessidades específicas de cada projeto. Sou apaixonado por inovação e desafios, busco sempre conhecer bem cada área no desenvolvimento de jogos e web pra facilitar a comunicação e ter uma noção melhor de escopo na hora de planejar e desenvolver.",
-      game_dev_skills: "Game Dev. Skills",
-      programming_skills: "Programming Skills"
+      game_dev_skills: "Design de Jogos",
+      programming_skills: "Programação"
     }
   },
   en: {
