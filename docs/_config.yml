@@ -4,9 +4,9 @@ description         : >-
                       Designer de jogos e desenvolvedor Full Stack.
                       Apaixonado por criar jogos e experiências digitais incríveis.
 baseurl             : ""            # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository          : eduvsk0/eduvsk0      # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+repository          : EduardoBrugnago/EduardoBrugnago      # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 remote_theme        : yousinix/portfolYOU
-open_new_tab        : false                    # Opens external URLs in new tab (works for posts, projects and navbar only)
+open_new_tab        : true                    # Opens external URLs in new tab (works for posts, projects and navbar only)
 lang                : pt                       # Default language (pt or en)
 
 
