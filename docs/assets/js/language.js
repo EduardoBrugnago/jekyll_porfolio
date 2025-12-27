@@ -1,4 +1,3 @@
-// Language Toggle System
 const translations = {
   pt: {
     nav: {
@@ -50,12 +49,9 @@ const translations = {
   }
 };
 
-// Get current language from localStorage or default to Portuguese
 let currentLang = localStorage.getItem('language') || 'pt';
 
-// Function to update all translations on the page
 async function updateTranslations(lang) {
-  // Update elements with data-i18n
   const elements = document.querySelectorAll('[data-i18n]');
   elements.forEach(element => {
     const key = element.getAttribute('data-i18n');
@@ -71,18 +67,14 @@ async function updateTranslations(lang) {
     }
   });
 
-  // Update skills and timeline
   await updateSkillsAndTimeline(lang);
 
-  // Update language toggle button
   updateLanguageButton(lang);
 }
 
-// Data caches
 let skillsData = null;
 let timelineData = null;
 
-// Function to load skills data
 async function loadSkillsData() {
   if (!skillsData) {
     try {
@@ -101,7 +93,6 @@ async function loadSkillsData() {
   return skillsData;
 }
 
-// Function to load timeline data
 async function loadTimelineData() {
   if (!timelineData) {
     try {
@@ -120,7 +111,6 @@ async function loadTimelineData() {
   return timelineData;
 }
 
-// Function to render skills
 function renderSkills(skills, container, lang) {
   container.innerHTML = '';
   skills.forEach(skill => {
@@ -141,7 +131,6 @@ function renderSkills(skills, container, lang) {
   });
 }
 
-// Function to render timeline
 function renderTimeline(timeline, container, lang) {
   container.innerHTML = '';
   timeline.forEach(item => {
@@ -162,11 +151,9 @@ function renderTimeline(timeline, container, lang) {
   });
 }
 
-// Function to update skills and timeline based on language
 async function updateSkillsAndTimeline(lang) {
   console.log('updateSkillsAndTimeline called with lang:', lang);
 
-  // Render skills
   const skillContainers = document.querySelectorAll('[data-skill-type]');
   console.log('Found skill containers:', skillContainers.length);
 
@@ -184,7 +171,6 @@ async function updateSkillsAndTimeline(lang) {
     }
   }
 
-  // Render timeline
   const timelineContainer = document.getElementById('timeline-container');
   console.log('Timeline container found:', !!timelineContainer);
 
@@ -196,7 +182,6 @@ async function updateSkillsAndTimeline(lang) {
   }
 }
 
-// Function to update language toggle button
 function updateLanguageButton(lang) {
   const langToggler = document.getElementById('language-toggler');
   if (langToggler) {
@@ -206,14 +191,12 @@ function updateLanguageButton(lang) {
   }
 }
 
-// Function to toggle language
 function toggleLanguage() {
-  currentLang = currentLang === 'pt' ? 'en' : 'pt';
+  currentLang = currentLang === 'en' ? 'pt' : 'en';
   localStorage.setItem('language', currentLang);
   updateTranslations(currentLang);
 }
 
-// Initialize on page load
 document.addEventListener('DOMContentLoaded', function() {
   updateTranslations(currentLang);
 });
