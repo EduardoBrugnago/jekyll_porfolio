@@ -1,6 +1,6 @@
 ---
 name: Berstuk
-tools: [Game Design, Ilustração]
+tools: [Game Design, Ilustração, GameMaker, HTML]
 image: https://mir-s3-cdn-cf.behance.net/project_modules/hd_webp/28b60066156673.5b0cedff6635c.jpg
 description: ARG.
 ---

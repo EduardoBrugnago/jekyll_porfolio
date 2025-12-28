@@ -1,6 +1,6 @@
 ---
 name: StarShooting
-tools: [Game Design, C#, Unity]
+tools: [Game Design, Programação, Unity]
 image: https://img.itch.zone/aW1nLzI0NjE5MTcxLnBuZw==/315x250%23c/%2Bi2%2FCJ.png
 description: 1º Colocado na GameJam+ Rio Grande do Sul.
 ---

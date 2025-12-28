@@ -1,6 +1,6 @@
 ---
 name: Contra, O Establishment
-tools: [Game Design, Ilustração]
+tools: [Game Design, Ilustração, Unity]
 image: https://img.itch.zone/aW1nLzQ2NjA0MzQucG5n/original/AlDRWN.png
 description: Jogo de comedia e simulador de ministro do Brasil, desenvolvido durante a 9ª Game Jam UNIVALI.
 ---
