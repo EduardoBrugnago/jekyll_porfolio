@@ -1,7 +1,7 @@
 ---
 name: Cubes
 tools: [Game Design, Ilustração, Blender, Unity]
-image:  "/assets/images/post'1.png"
+image:  https://img.itch.zone/aW1nLzIxOTY4MDgucG5n/original/ZiqvtY.png
 description: Jogo de puzzle 3D.
 ---
 ![preview](https://img.itch.zone/aW1nLzIxOTY4MDgucG5n/original/ZiqvtY.png)
