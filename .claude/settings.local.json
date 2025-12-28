@@ -3,7 +3,9 @@
     "allow": [
       "Bash(bundle exec jekyll serve:*)",
       "Bash(bundle exec jekyll build:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(magick:*)",
+      "Bash(node --version)"
     ]
   }
 }

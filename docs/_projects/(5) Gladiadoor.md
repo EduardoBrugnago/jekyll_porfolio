@@ -1,6 +1,6 @@
 ---
 name: Gladiadoor
-tools: [Game Design, Photoshop, Unity, C#]
+tools: [Game Design, Ilustração, Programação]
 image: https://img.itch.zone/aW1nLzU4NTA5MTQucG5n/original/Ou5r%2F7.png
 description: Bullet Hell Top-Down, desenvolvido durante a 10ª Game Jam UNIVALI.
 ---

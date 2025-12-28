@@ -1,6 +1,6 @@
 ---
 name: Ghostbursters
-tools: [Game Design, Photoshop, Unity, C#]
+tools: [Game Design, Ilustração, Programação]
 image: https://img.itch.zone/aW1nLzE1NzYzMDY2LnBuZw==/315x250%23c/MoghFH.png
 description: Jogo de comedia e simulador de ministro do Brasil, desenvolvido durante a 15ª Game Jam UNIVALI.
 ---

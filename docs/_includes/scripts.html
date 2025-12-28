@@ -23,3 +23,39 @@ $(function () {
 
 <!-- Language Toggle System -->
 <script src="{{ '/assets/js/language.js' | relative_url }}"></script>
+
+<!-- Reorder projects to display horizontally -->
+<script>
+$(document).ready(function() {
+  var container = $('.card-columns');
+  if (container.length) {
+    var cards = container.children().toArray();
+    var columnCount = 3;
+
+    // Adjust column count based on screen size
+    if (window.innerWidth <= 576) {
+      columnCount = 1;
+    } else if (window.innerWidth <= 992) {
+      columnCount = 2;
+    }
+
+    // Only reorder if multiple columns
+    if (columnCount > 1) {
+      var reordered = [];
+      var totalCards = cards.length;
+      var cardsPerColumn = Math.ceil(totalCards / columnCount);
+
+      for (var col = 0; col < columnCount; col++) {
+        for (var row = 0; row < cardsPerColumn; row++) {
+          var index = row * columnCount + col;
+          if (index < totalCards) {
+            reordered.push(cards[index]);
+          }
+        }
+      }
+
+      container.empty().append(reordered);
+    }
+  }
+});
+</script>

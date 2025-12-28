@@ -1,6 +1,6 @@
 ---
 name: One Second of Darkness
-tools: [Game Design, Photoshop]
+tools: [Game Design, Ilustração]
 image: https://img.itch.zone/aW1hZ2UvMzA4NDE1LzE1MTQ3MjgucG5n/315x250%23c/H1fuf6.png
 description: Point n’ click desenvolvido durante a 5ª Game Jam UNIVALI.
 ---
