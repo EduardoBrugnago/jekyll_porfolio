@@ -17,7 +17,7 @@ O jogo foi desenvolvido na 10ª Game Jam UNIVALI com o tema: <strong>Pequenas A�
 ## Equipe:
 - [Eduardo Brugnago - Game Design e Programador](https://www.linkedin.com/in/eduardobrugnago/)
 - [Rafael Risso - Programador](https://www.linkedin.com/in/rafael-maciel-risso/)
-- [Lívia Ruiz Peroni - Direção de arte](https://www.behance.net/liviaperoni)
+- [Lívia Ruiz Peroni - Direção de arte](https://www.linkedin.com/in/livia-peroni/)
 
 
 <p class="text-center">
