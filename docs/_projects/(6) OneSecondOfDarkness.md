@@ -16,11 +16,17 @@ O jogo se passa em uma mansão, onde os convidados estão sendo assassinados a c
 
 Na cena há vários objetos para interagir que poderão ser analisados e acionados. Ao analisar, uma breve dica ou descrição será mostrada, direcionando o jogador. Ao acionar o objeto correto, a vítima será salva e o jogador se aproxima da condição de vitória. Entretanto, é preciso agir com cautela, pois cada objeto só pode ser acionado apenas uma única vez. É fundamental também relacionar os objetos e imaginar como podem se conectar, possibilitando uma ligação de necessidade entre dois, para então, salvar as vítimas.
 
-{% include elements/figure.html image="https://cdna.artstation.com/p/assets/images/images/016/602/430/large/eduardo-brugnago-2.jpg?1552771055" caption="Introdução do jogo" %}
-
-{% include elements/figure.html image="https://cdna.artstation.com/p/assets/images/images/016/602/434/large/eduardo-brugnago-5.jpg?1552771060" caption="Primeiro andar da casa" %}
-
+## Equipe:
+- [Eduardo Brugnago - Game Design e Desing de Personagem](https://www.linkedin.com/in/eduardobrugnago/)
+- [Luna Amora - Programação](https://luna-amora.itch.io/)
+- [Marina Nery - UI, UX e Roteiro](https://www.linkedin.com/in/marina-nery-matos/)
+- [Victoria Postoiev - UI, UX e Roteiro](https://www.linkedin.com/in/victoriapostoiev/)
 
 <p class="text-center">
 {% include elements/button.html link="https://victoria33.itch.io/one-second-of-darkness" text="Baixar o Jogo" %}
 </p>
+
+{% include elements/figure.html image="https://cdna.artstation.com/p/assets/images/images/016/602/430/large/eduardo-brugnago-2.jpg?1552771055" caption="Introdução do jogo" %}
+
+{% include elements/figure.html image="https://cdna.artstation.com/p/assets/images/images/016/602/434/large/eduardo-brugnago-5.jpg?1552771060" caption="Primeiro andar da casa" %}
+
