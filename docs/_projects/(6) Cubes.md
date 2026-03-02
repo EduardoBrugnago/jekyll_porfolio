@@ -16,10 +16,19 @@ Cubes é um jogo 3D isométrico de puzzle. O desafio consiste em utilizar elemen
 <br>
 
 
-{% include elements/figure.html image="https://img.itch.zone/aW1hZ2UvNDI1MDA5LzIxOTY3MjEucG5n/original/hgKX7J.png" %}
+{% capture carousel_images %}
+https://img.itch.zone/aW1hZ2UvNDI1MDA5LzIxOTY3MjEucG5n/original/hgKX7J.png
+https://img.itch.zone/aW1hZ2UvNDI1MDA5LzIxOTY3MjMucG5n/original/FMJjja.png
+/assets/images/ca.png
+{% endcapture %}
 
-{% include elements/figure.html image="https://img.itch.zone/aW1hZ2UvNDI1MDA5LzIxOTY3MjMucG5n/original/FMJjja.png"%}
+{% capture carousel_captions %}
+Gameplay
+Gameplay
+Gameplay
+{% endcapture %}
 
+{% include elements/carousel-captions.html id="carousel-cubes" images=carousel_images captions=carousel_captions %}
 
 <p class="text-center">
 {% include elements/button.html link="https://paxtel.itch.io/cubes" text="Baixar o Jogo" %}

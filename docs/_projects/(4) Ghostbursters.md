@@ -21,12 +21,20 @@ Explore a mansão para encontrar os fantasmas, ao interagir com eles o jogador d
 ## Desenvolvimento:
 O jogo foi desenvolvido na 15ª Game Jam UNIVALI com o tema: <strong>Preso em um loop</strong>, em dupla com meu socio [Rafael Risso](https://www.linkedin.com/in/rafael-maciel-risso/). No desenvolvimento eu fui responsável pelo conceito e design do jogo, todas as ilustrações, animações e UI, além de implementar os elementos de UI diretamente na Unity. 
 
+{% capture carousel_images %}
+https://img.itch.zone/aW1hZ2UvMjY0NTE0MS8xNTc2ODExMC5wbmc=/original/fLr2fO.png
+https://img.itch.zone/aW1hZ2UvMjY0NTE0MS8xNjAyMjczOS5wbmc=/original/%2FLTy93.png
+https://img.itch.zone/aW1hZ2UvMjY0NTE0MS8xNjAyMjc0Mi5wbmc=/original/TK7I5S.png
+{% endcapture %}
+
+{% capture carousel_captions %}
+Menu do jogo
+Fantasma sendo absorvido
+Mecânica de socar o fantasma
+{% endcapture %}
+
+{% include elements/carousel-captions.html id="carousel-ghostbursters" images=carousel_images captions=carousel_captions %}
+
 <p class="text-center">
 {% include elements/button.html link="https://eduvsk0.itch.io/ghostbursters" text="Baixar o Jogo" %}
 </p>
-
-{% include elements/figure.html image="https://img.itch.zone/aW1hZ2UvMjY0NTE0MS8xNTc2ODExMC5wbmc=/original/fLr2fO.png" caption="Menu do jogo" %}
-
-{% include elements/figure.html image="https://img.itch.zone/aW1hZ2UvMjY0NTE0MS8xNjAyMjczOS5wbmc=/original/%2FLTy93.png" caption="Fantasma sendo absorvido" %}
-
-{% include elements/figure.html image="https://img.itch.zone/aW1hZ2UvMjY0NTE0MS8xNjAyMjc0Mi5wbmc=/original/TK7I5S.png" caption="Mecânica de socar o fantasma" %}

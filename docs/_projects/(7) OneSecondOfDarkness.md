@@ -22,11 +22,21 @@ Na cena há vários objetos para interagir que poderão ser analisados e acionad
 - [Marina Nery - UI, UX e Roteiro](https://www.linkedin.com/in/marina-nery-matos/)
 - [Victoria Postoiev - UI, UX e Roteiro](https://www.linkedin.com/in/victoriapostoiev/)
 
+{% capture carousel_images %}
+/assets/images/s2.png
+/assets/images/s1.png
+https://cdna.artstation.com/p/assets/images/images/016/602/434/large/eduardo-brugnago-5.jpg?1552771060
+{% endcapture %}
+
+{% capture carousel_captions %}
+Menu
+Introdução do jogo
+Primeiro andar da casa
+{% endcapture %}
+
+{% include elements/carousel-captions.html id="carousel-onesecond" images=carousel_images captions=carousel_captions %}
+
 <p class="text-center">
 {% include elements/button.html link="https://victoria33.itch.io/one-second-of-darkness" text="Baixar o Jogo" %}
 </p>
-
-{% include elements/figure.html image="https://cdna.artstation.com/p/assets/images/images/016/602/430/large/eduardo-brugnago-2.jpg?1552771055" caption="Introdução do jogo" %}
-
-{% include elements/figure.html image="https://cdna.artstation.com/p/assets/images/images/016/602/434/large/eduardo-brugnago-5.jpg?1552771060" caption="Primeiro andar da casa" %}
 

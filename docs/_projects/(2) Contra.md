@@ -24,10 +24,24 @@ Após a game jam. fui responsável pelo porte do jogo a diferentes resoluções,
 
 Jogo foi desenvolvido com Unity e as ilustrações pelo Photoshop.
 
+{% capture carousel_images %}
+/assets/images/c1 (2).png
+https://img.itch.zone/aW1hZ2UvODE0MTA1LzE3MDQ3MTQ5LnBuZw==/original/4c9Pnr.png
+https://img.itch.zone/aW1hZ2UvODE0MTA1LzE3MDQ3MTUwLnBuZw==/original/6DHsBp.png
+/assets/images/c1 (3).png
+/assets/images/+gRSgm.png
+{% endcapture %}
+
+{% capture carousel_captions %}
+Menu Principal
+Derrota econômica
+Fluxo principal
+Twitter do presidente
+Inicio do dia
+{% endcapture %}
+
+{% include elements/carousel-captions.html id="carousel-contra" images=carousel_images captions=carousel_captions %}
+
 <p class="text-center">
 {% include elements/button.html link="https://eduvsk0.itch.io/contraoestablishment" text="Baixar o Jogo" %}
 </p>
-
-{% include elements/figure.html image="https://img.itch.zone/aW1hZ2UvODE0MTA1LzE3MDQ3MTUwLnBuZw==/original/6DHsBp.png" caption="Fluxo principal" %}
-
-{% include elements/figure.html image="https://img.itch.zone/aW1hZ2UvODE0MTA1LzE3MDQ3MTQ5LnBuZw==/original/4c9Pnr.png" caption="Derrota econômica" %}

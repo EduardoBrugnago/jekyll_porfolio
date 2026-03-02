@@ -1,0 +1,61 @@
+{%- assign _images = include.images | strip | newline_to_br | split: '<br />' -%}
+{%- assign _captions = include.captions | strip | newline_to_br | split: '<br />' -%}
+
+<div id="{{ include.id }}" class="carousel slide mb-4 carousel-captions" data-ride="false">
+
+  <ol class="carousel-indicators">
+    {% for img in _images %}
+      <li data-target="#{{ include.id }}" data-slide-to="{{ forloop.index0 }}"
+          {% if forloop.first %}class="active"{% endif %}></li>
+    {% endfor %}
+  </ol>
+
+  <div class="carousel-inner">
+    {% for img in _images %}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <img src="{{ img | strip }}" class="d-block w-100 lightbox-trigger" alt="{{ _captions[forloop.index0] | strip }}">
+        {% assign caption = _captions[forloop.index0] | strip %}
+        {% if caption != "" %}
+          <div class="carousel-caption d-none d-md-block">
+            <p>{{ caption }}</p>
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+
+  <a class="carousel-control-prev" href="#{{ include.id }}" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+
+  <a class="carousel-control-next" href="#{{ include.id }}" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+
+<script>
+if (!window._lightboxReady) {
+  window._lightboxReady = true;
+
+  var _lb = document.createElement('div');
+  _lb.id = 'lightbox-overlay';
+  _lb.innerHTML = '<img id="lightbox-img" src="">';
+  document.body.appendChild(_lb);
+
+  _lb.addEventListener('click', function() { _lb.classList.remove('active'); });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') _lb.classList.remove('active');
+  });
+
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('lightbox-trigger')) {
+      document.getElementById('lightbox-img').src = e.target.src;
+      _lb.classList.add('active');
+    }
+  });
+}
+</script>

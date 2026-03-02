@@ -1,7 +1,7 @@
 ---
 name: Tabuleiro da Economia Circular
 tools: [Game Design, Programação, Unity]
-image:  "//assets/images/nome-jogo.png"
+image:  "/assets/images/nome-jogo.png"
 description: Jogo de tabuleiro educativo desenvolvido para a plataforma Circularizando.
 ---
 
@@ -27,15 +27,23 @@ O projeto foi desenvolvido como uma adaptação digital do <a href="https://circ
 
 O jogo foi desenvolvido em <strong>Unity</strong>, com suporte a navegador e dispositivos móveis.
 
+{% capture carousel_images %}
+/assets/images/1.png
+/assets/images/2.png
+/assets/images/3.png
+/assets/images/4.png
+{% endcapture %}
+
+{% capture carousel_captions %}
+Menu Principal
+Tabuleiro e Dado
+Tela de Pergunta e Personagens
+Casa especial
+{% endcapture %}
+
+{% include elements/carousel-captions.html id="carousel-circular" images=carousel_images captions=carousel_captions %}
+
 <p class="text-center">
 {% include elements/button.html link="https://circularizando.unoesc.edu.br/jogos/tabuleiro-circular" text="Clique aqui para jogar" %}
 </p>
-
-{% include elements/figure.html image="/assets/images/1.png" caption="Menu Principal" %}
-
-{% include elements/figure.html image="/assets/images/2.png" caption="Tabuleiro e Dado" %}
-
-{% include elements/figure.html image="/assets/images/3.png" caption="Tela de Pergunta e Personagens" %}
-
-{% include elements/figure.html image="/assets/images/4.png" caption="Casa expecial" %}
 

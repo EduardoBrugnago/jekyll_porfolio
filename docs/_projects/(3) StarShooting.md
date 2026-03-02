@@ -27,13 +27,21 @@ O jogo foi desenvolvido na GameJam+ RS, com a equipe [Bad Moth Studios](https://
 - [Laura Pohlmann - Arte da Capa](https://www.instagram.com/dunno.rambles/)
 - [João Pedro Moreira da Cunha - Sound Design e Game Design](https://www.linkedin.com/in/jo%C3%A3o-pedro-moreira-da-cunha-3a8059328/)
 
+{% capture carousel_images %}
+/assets/images/star (2).webp
+/assets/images/star (1).webp
+{% endcapture %}
+
+{% capture carousel_captions %}
+Tela do jogo
+Tela do jogo
+{% endcapture %}
+
+{% include elements/carousel-captions.html id="carousel-starshooting" images=carousel_images captions=carousel_captions %}
+
 <p class="text-center">
 {% include elements/button.html link="https://superagah.itch.io/star-shooting" text="Baixar o Jogo" %}
 </p>
-
-{% include elements/figure.html image="/assets/images/star (2).webp" caption="Tela do jogo" %}
-
-{% include elements/figure.html image="/assets/images/star (1).webp" caption="Tela do jogo" %}
 
 
 

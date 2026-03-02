@@ -20,12 +20,22 @@ O jogo foi desenvolvido na 10ª Game Jam UNIVALI com o tema: <strong>Pequenas A�
 - [Lívia Ruiz Peroni - Direção de arte](https://www.linkedin.com/in/livia-peroni/)
 
 
+{% capture carousel_images %}
+https://img.itch.zone/aW1nLzU4NTA5MTQucG5n/original/Ou5r%2F7.png
+/assets/images/door.webp
+/assets/images/5.png
+{% endcapture %}
+
+{% capture carousel_captions %}
+Menu do jogo
+Arena com o modificador de velocidade
+Seleção de modificador
+{% endcapture %}
+
+{% include elements/carousel-captions.html id="carousel-gladiadoor" images=carousel_images captions=carousel_captions %}
+
 <p class="text-center">
 {% include elements/button.html link="https://eduvsk0.itch.io/gladiadoor" text="Baixar o Jogo" %}
 </p>
-
-{% include elements/figure.html image="https://img.itch.zone/aW1nLzU4NTA5MTQucG5n/original/Ou5r%2F7.png" caption="Menu do jogo" %}
-
-{% include elements/figure.html image="/assets/images/door.webp" caption="Arena com o modificador de velocidade" %}
 
 
