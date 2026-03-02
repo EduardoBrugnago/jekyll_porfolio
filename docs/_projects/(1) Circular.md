@@ -1,7 +1,7 @@
 ---
 name: Tabuleiro da Economia Circular
 tools: [Game Design, Programação, Unity]
-image:  "/assets/images/nome-jogo.png"
+image:  "/assets/images/lc.png"
 description: Jogo de tabuleiro educativo desenvolvido para a plataforma Circularizando.
 ---
 

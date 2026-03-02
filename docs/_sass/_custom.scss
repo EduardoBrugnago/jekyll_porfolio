@@ -220,6 +220,21 @@ a::after {
   }
 }
 
+// Project cards - light mode glass + pink gradient
+[data-theme="light"] .project.card {
+  background: linear-gradient(135deg, rgba(255, 173, 173, 0.2) 0%, rgba(255, 220, 220, 0.2) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 173, 173, 0.5);
+  box-shadow: 0 4px 20px rgba(255, 173, 173, 0.2);
+
+  &:hover:not(.post) {
+    background: linear-gradient(135deg, rgba(255, 173, 173, 0.2) 0%, rgba(255, 220, 220, 0.25) 100%);
+    box-shadow: 0 8px 32px rgba(255, 173, 173, 0.4);
+    border-color: rgba(255, 173, 173, 0.8);
+  }
+}
+
 hr {
   margin-top: 26px;
   margin-bottom: 26px;

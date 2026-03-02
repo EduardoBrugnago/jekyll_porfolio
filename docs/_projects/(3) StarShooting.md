@@ -1,10 +1,10 @@
 ---
 name: StarShooting
 tools: [Game Design, Programação, Unity]
-image: https://img.itch.zone/aW1nLzI0NjE5MTcxLnBuZw==/315x250%23c/%2Bi2%2FCJ.png
+image: /assets/images/+i2_CJ.png
 description: 1º Colocado na GameJam+ Rio Grande do Sul.
 ---
-![preview](https://img.itch.zone/aW1nLzE4MjUyNzkzLnBuZw==/original/0wDUuK.png)
+![preview](/assets/images/+i2_CJ.png)
 <p class="text-center h5">
 <strong>Tema:</strong> Puzzle | Action | Top Down
 </p>
