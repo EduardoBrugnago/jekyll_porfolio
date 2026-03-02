@@ -1,11 +1,13 @@
 ---
 name: Tabuleiro da Economia Circular
 tools: [Game Design, Programação, Unity]
-image:  "/assets/images/circular.png"
+image:  "//assets/images/nome-jogo.png"
 description: Jogo de tabuleiro educativo desenvolvido para a plataforma Circularizando.
 ---
 
-![preview](https://img.itch.zone/aW1nLzQ2NjA0MzQucG5n/original/AlDRWN.png)
+![preview](/assets/images/nome-jogo.png)
+
+{% include elements/figure.html image="/assets/images/apoio-desenvolvimento.png" %}
 
 ## Sobre o Jogo:
 Este jogo é a adaptação digital de um <a href="https://circularizando.unoesc.edu.br/conceito-economia-circular" target="_blank">jogo de tabuleiro</a> voltado ao ensino de <strong>Economia Circular</strong>. Ideal tanto para a sala de aula quanto para jogar em casa, ele transforma o aprendizado em uma experiência interativa, dinâmica e divertida, podendo ser jogado localmente ou online entre 2 a 4 jogadores, diretamente no navegador ou em dispositivos móveis.
