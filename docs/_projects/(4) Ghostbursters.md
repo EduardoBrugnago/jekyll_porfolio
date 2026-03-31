@@ -2,7 +2,7 @@
 name: Ghostbursters
 tools: [Demo, Game Design, Ilustração, Programação]
 image: https://img.itch.zone/aW1nLzE1NzYzMDY2LnBuZw==/315x250%23c/MoghFH.png
-description: Jogo de comedia e simulador de ministro do Brasil, desenvolvido durante a 15ª Game Jam UNIVALI.
+description: Jogo de ação top-down, desenvolvido durante a 15ª Game Jam UNIVALI.
 ---
 
 ![preview](https://img.itch.zone/aW1nLzE1NzY4MTg2LnBuZw==/original/lKD96Q.png)
