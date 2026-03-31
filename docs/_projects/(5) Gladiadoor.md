@@ -1,11 +1,18 @@
 ---
 name: Gladiadoor
-tools: [Demo, Game Design, Ilustração, Programação]
+name_en: Gladiadoor
+status: Demo
+status_en: Demo
+tools: [Game Design, Ilustração, Programação]
+tools_en: [Game Design, Illustration, Programming]
 image: https://img.itch.zone/aW1nLzU4NTA5MTQucG5n/original/Ou5r%2F7.png
 description: Bullet Hell Top-Down, desenvolvido durante a 10ª Game Jam UNIVALI.
+description_en: Top-Down Bullet Hell, developed during the 10th UNIVALI Game Jam.
 ---
 
 ![preview](https://img.itch.zone/aW1nLzU4NTA4OTIucG5n/original/byUjLx.png)
+
+<div class="lang-pt" markdown="1">
 
 ## Sobre o Jogo:
 
@@ -23,6 +30,28 @@ O jogo foi desenvolvido na 10ª Game Jam UNIVALI com o tema: <strong>Pequenas A�
 - [Rafael Risso - Programador](https://www.linkedin.com/in/rafael-maciel-risso/)
 - [Lívia Ruiz Peroni - Direção de arte](https://www.linkedin.com/in/livia-peroni/)
 
+</div>
+
+<div class="lang-en" style="display:none" markdown="1">
+
+## About the Game:
+
+The mundane action of choosing a door to open — this small action can have a huge consequence in your life, something like winning a car or being attacked by a monkey. The game is based on this concept: a bullet hell where doors are portals that change the rules and the game world.
+
+Be a dimensional gladiator, survive, and open the doors to your future (or shoot them). SHOOT EVERYTHING!! Fight in an arena to survive, but be careful with your choices — you can never be sure...
+
+## Development:
+
+The game was developed at the 10th UNIVALI Game Jam with the theme: <strong>Small Actions Big Consequences</strong>, with a group of 3 people. In development, I was responsible for the concept and game design, some of the sprites, and part of the implementation in Unity.
+
+## Team:
+
+- [Eduardo Brugnago - Game Design and Programmer](https://www.linkedin.com/in/eduardobrugnago/)
+- [Rafael Risso - Programmer](https://www.linkedin.com/in/rafael-maciel-risso/)
+- [Lívia Ruiz Peroni - Art Direction](https://www.linkedin.com/in/livia-peroni/)
+
+</div>
+
 {% capture carousel_images %}
 https://img.itch.zone/aW1nLzU4NTA5MTQucG5n/original/Ou5r%2F7.png
 /assets/images/door.webp
@@ -37,6 +66,13 @@ Seleção de modificador
 
 {% include elements/carousel-captions.html id="carousel-gladiadoor" images=carousel_images captions=carousel_captions %}
 
+<div class="lang-pt">
 <p class="text-center">
 {% include elements/button.html link="https://eduvsk0.itch.io/gladiadoor" text="Baixar o Jogo" %}
 </p>
+</div>
+<div class="lang-en" style="display:none">
+<p class="text-center">
+{% include elements/button.html link="https://eduvsk0.itch.io/gladiadoor" text="Download the Game" %}
+</p>
+</div>

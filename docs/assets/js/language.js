@@ -69,6 +69,10 @@ async function updateTranslations(lang) {
 
   await updateSkillsAndTimeline(lang);
 
+  updateProjectCards(lang);
+  updatePostCards(lang);
+  updateLangBlocks(lang);
+
   updateLanguageButton(lang);
 }
 
@@ -180,6 +184,78 @@ async function updateSkillsAndTimeline(lang) {
       renderTimeline(timeline, timelineContainer, lang);
     }
   }
+}
+
+function updateProjectCards(lang) {
+  document.querySelectorAll('.project.card').forEach(card => {
+    const name = card.getAttribute('data-name-' + lang);
+    const desc = card.getAttribute('data-desc-' + lang);
+    const toolsStr = card.getAttribute('data-tools-' + lang);
+
+    const nameEl = card.querySelector('.project-name');
+    if (nameEl && name) {
+      const iconPrefix = nameEl.querySelector('i');
+      if (iconPrefix) {
+        nameEl.innerHTML = '';
+        nameEl.appendChild(iconPrefix);
+        nameEl.append(' |  ' + name);
+      } else {
+        nameEl.textContent = name;
+      }
+    }
+
+    const descEl = card.querySelector('.project-desc');
+    if (descEl && desc) descEl.textContent = desc;
+
+    const status = card.getAttribute('data-status-' + lang);
+    const statusEl = card.querySelector('.project-status');
+    if (statusEl && status) statusEl.textContent = status;
+
+    const toolsEl = card.querySelector('.project-tools');
+    if (toolsEl && toolsStr) {
+      const statusHTML = statusEl ? statusEl.outerHTML : '';
+      const toolsHTML = toolsStr.split('|||').map(t =>
+        '<span class="badge badge-pill text-primary border border-primary ml-1">' + t + '</span>'
+      ).join('');
+      toolsEl.innerHTML = statusHTML + toolsHTML;
+    }
+  });
+}
+
+function updatePostCards(lang) {
+  document.querySelectorAll('.post.card').forEach(card => {
+    const title = card.getAttribute('data-title-' + lang);
+    const desc = card.getAttribute('data-desc-' + lang);
+    const tagsStr = card.getAttribute('data-tags-' + lang);
+
+    const titleEl = card.querySelector('.post-title');
+    if (titleEl && title) titleEl.textContent = title;
+
+    const descEl = card.querySelector('.post-desc');
+    if (descEl && desc) descEl.textContent = desc;
+
+    const tagsEl = card.querySelector('.post-tags');
+    if (tagsEl && tagsStr) {
+      const tags = tagsStr.split('|||');
+      tagsEl.innerHTML = tags.map(t =>
+        '<span class="badge ' + (tagsEl.dataset.badgeStyle || 'badge-dark') + '">' + t + '</span>'
+      ).join(' ');
+    }
+  });
+
+  document.querySelectorAll('.post-page-title').forEach(el => {
+    const title = el.getAttribute('data-title-' + lang);
+    if (title) el.textContent = title;
+  });
+}
+
+function updateLangBlocks(lang) {
+  document.querySelectorAll('.lang-pt').forEach(el => {
+    el.style.display = lang === 'pt' ? '' : 'none';
+  });
+  document.querySelectorAll('.lang-en').forEach(el => {
+    el.style.display = lang === 'en' ? '' : 'none';
+  });
 }
 
 function updateLanguageButton(lang) {
