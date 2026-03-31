@@ -235,6 +235,11 @@ a::after {
   }
 }
 
+// Status badge - dark text for readability
+[data-theme="dark"] .project-status.badge-primary {
+  color: #1a1a1a !important;
+}
+
 hr {
   margin-top: 26px;
   margin-bottom: 26px;
