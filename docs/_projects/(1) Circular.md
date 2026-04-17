@@ -13,7 +13,7 @@ description_en: Educational board game developed for the Circularizando platform
 
 ![preview](/assets/images/nome-jogo.png)
 
-<div class="lang-pt">
+<div>
 {% include elements/figure.html image="/assets/images/apoio-desenvolvimento.png" %}
 </div>
 
