@@ -13,16 +13,17 @@
   %}
 
   <!-- Local Projects -->
-  {% for project in site.projects %} {%- assign project_type = "local" -%} {%-
-  assign project_id = project.name | slugify -%} {%- assign project_img =
-  project.image -%} {%- assign project_name = project.name -%} {%- assign
-  project_desc = project.description -%} {%- assign project_tools =
-  project.tools -%} {%- assign project_name_en = project.name_en -%} {%- assign
-  project_desc_en = project.description_en -%} {%- assign project_tools_en =
-  project.tools_en -%} {%- assign project_date = project.date -%} {%- assign
-  project_status = project.status -%} {%- assign project_status_en =
-  project.status_en -%} {%- if project.external_url -%} {%- assign project_url =
-  project.external_url -%} {%- assign external = true -%} {%- else -%} {%-
-  assign project_url = project.url | relative_url -%} {%- assign external =
-  false -%} {%- endif -%} {% include projects/project-card.html %} {% endfor %}
+  {% assign sorted_projects = site.projects| reverse %} {% for project in
+  sorted_projects %} {%- assign project_type = "local" -%} {%- assign project_id
+  = project.name | slugify -%} {%- assign project_img = project.image -%} {%-
+  assign project_name = project.name -%} {%- assign project_desc =
+  project.description -%} {%- assign project_tools = project.tools -%} {%-
+  assign project_name_en = project.name_en -%} {%- assign project_desc_en =
+  project.description_en -%} {%- assign project_tools_en = project.tools_en -%}
+  {%- assign project_date = project.date -%} {%- assign project_status =
+  project.status -%} {%- assign project_status_en = project.status_en -%} {%- if
+  project.external_url -%} {%- assign project_url = project.external_url -%} {%-
+  assign external = true -%} {%- else -%} {%- assign project_url = project.url |
+  relative_url -%} {%- assign external = false -%} {%- endif -%} {% include
+  projects/project-card.html %} {% endfor %}
 </div>
