@@ -6,12 +6,12 @@ status: Demo
 status_en: Demo
 tools: [Game Design, Ilustração]
 tools_en: [Game Design, Illustration]
-image: https://img.itch.zone/aW1nLzQ2NjA0MzQucG5n/original/AlDRWN.png
+image: /assets/images/contra.png
 description: Jogo de comedia e simulador de ministro do Brasil, desenvolvido durante a 9ª Game Jam UNIVALI.
 description_en: Comedy and Brazilian minister simulator game, developed during the 9th UNIVALI Game Jam.
 ---
 
-![preview](https://img.itch.zone/aW1nLzQ2NjA0MzQucG5n/original/AlDRWN.png)
+![preview](/assets/images/contra.png)
 
 <div class="lang-pt" markdown="1">
 
