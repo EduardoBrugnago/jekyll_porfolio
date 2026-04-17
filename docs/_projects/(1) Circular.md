@@ -16,9 +16,6 @@ description_en: Educational board game developed for the Circularizando platform
 <div class="lang-pt">
 {% include elements/figure.html image="/assets/images/apoio-desenvolvimento.png" %}
 </div>
-<div class="lang-en" style="display:none">
-{% include elements/figure.html image="/assets/images/en-apoio-desenvolvimento.png" %}
-</div>
 
 <div class="lang-pt" markdown="1">
 
@@ -27,6 +24,7 @@ description_en: Educational board game developed for the Circularizando platform
 </p>
 
 ## Sobre o Jogo:
+
 Este jogo é a adaptação digital de um <a href="https://circularizando.unoesc.edu.br/conceito-economia-circular" target="_blank">jogo de tabuleiro</a> voltado ao ensino de <strong>Economia Circular</strong>. Foco dele é para a sala de aula e jogar em casa como reforço, transformando o aprendizado em uma experiência interativa, dinâmica e divertida, podendo ser jogado localmente ou <strong>online entre 2 a 4 jogadores</strong>, diretamente no navegador ou em dispositivos móveis.
 
 Os jogadores escolhem entre <strong>4 times</strong>, cada um associado a um tema da economia circular. Cada equipe conta com uma dupla de personagens com design e personalidades distintas, tornando a escolha do time parte da experiência.
@@ -54,6 +52,7 @@ O jogo foi desenvolvido em <strong>Unity</strong>, com suporte a navegador e dis
 </p>
 
 ## About the Game:
+
 This game is the digital adaptation of a <a href="https://circularizando.unoesc.edu.br/conceito-economia-circular" target="_blank">board game</a> focused on teaching <strong>Circular Economy</strong>. It is designed for the classroom and for playing at home as reinforcement, turning learning into an interactive, dynamic, and fun experience. It can be played locally or <strong>online with 2 to 4 players</strong>, directly in the browser or on mobile devices.
 
 Players choose from <strong>4 teams</strong>, each associated with a circular economy theme. Each team features a pair of characters with distinct designs and personalities, making the team selection part of the experience.
