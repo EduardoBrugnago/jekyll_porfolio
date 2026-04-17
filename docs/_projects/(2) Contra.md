@@ -1,4 +1,5 @@
 ---
+date: 2020-11-08
 name: Contra, O Establishment
 name_en: Contra, The Establishment
 status: Demo
@@ -28,10 +29,10 @@ Receba Projetos de diferentes amigos e colegas do Presidente, analise se os docu
 
 ## Desenvolvimento:
 
-O jogo foi desenvolvido na 9ª Game Jam UNIVALI com o tema: <strong>ECONOMIA MUNDIAL</strong>, em dupla com meu socio [Rafael Risso](https://www.linkedin.com/in/rafael-maciel-risso/). No desenvolvimento eu fui responsável pelo conceito e design do jogo, todas as ilustrações e UI, além dos diálogos e textos.
-Após a game jam. fui responsável pelo porte do jogo a diferentes resoluções, que a versão original apenas rodava em 16:9.
+O jogo foi desenvolvido na 9ª Game Jam UNIVALI com o tema: <strong>ECONOMIA MUNDIAL</strong>, em dupla com meu socio [Rafael Risso](https://www.linkedin.com/in/rafael-maciel-risso/). No desenvolvimento eu fui responsável pelo conceito e design do jogo, todas as ilustrações,UI e roteiro.
+Após a game jam. fui responsável pelo porte do jogo a diferentes resoluções.
 
-Jogo foi desenvolvido com Unity e as ilustrações pelo Photoshop.
+Jogo foi desenvolvido na Unity.
 
 </div>
 
@@ -51,10 +52,10 @@ Receive projects from different friends and colleagues of the President, check i
 
 ## Development:
 
-The game was developed at the 9th UNIVALI Game Jam with the theme: <strong>WORLD ECONOMY</strong>, in a duo with my partner [Rafael Risso](https://www.linkedin.com/in/rafael-maciel-risso/). In development, I was responsible for the concept and game design, all illustrations and UI, as well as the dialogues and texts.
-After the game jam, I was responsible for porting the game to different resolutions, as the original version only ran in 16:9.
+The game was developed at the 9th UNIVALI Game Jam with the theme: <strong>WORLD ECONOMY</strong>, in a duo with my partner [Rafael Risso](https://www.linkedin.com/in/rafael-maciel-risso/). In development, I was responsible for the concept and game design, all illustrations, UI and the dialogues.
+After the game jam, I was responsible for porting the game to different resolutions.
 
-The game was developed with Unity and the illustrations with Photoshop.
+The game was developed with Unity.
 
 </div>
 

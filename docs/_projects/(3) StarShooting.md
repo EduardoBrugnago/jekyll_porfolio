@@ -1,4 +1,5 @@
 ---
+date: 2024-10-20
 name: StarShooting
 name_en: StarShooting
 status: Demo

@@ -1,35 +1,73 @@
 <div class="wow animated fadeIn" data-wow-delay=".15s">
-  <a href="{{ project_url }}" class="project card text-themed" {%- if external and site.open_new_tab -%} target="_blank" {%- endif -%}
+  <a
+    href="{{ project_url }}"
+    class="project card text-themed"
+    {%-
+    if
+    external
+    and
+    site.open_new_tab
+    -%}
+    target="_blank"
+    {%-
+    endif
+    -%}
     data-name-pt="{{ project_name }}"
     data-name-en="{{ project_name_en }}"
     data-desc-pt="{{ project_desc }}"
     data-desc-en="{{ project_desc_en }}"
-    {%- if project_tools_en -%}
+    {%-
+    if
+    project_tools_en
+    -%}
     data-tools-pt="{{ project_tools | join: '|||' }}"
     data-tools-en="{{ project_tools_en | join: '|||' }}"
-    {%- endif -%}
-    {%- if project_status -%}
+    {%-
+    endif
+    -%}
+    {%-
+    if
+    project_status
+    -%}
     data-status-pt="{{ project_status }}"
     data-status-en="{{ project_status_en }}"
-    {%- endif -%}
+    {%-
+    endif
+    -%}
   >
     {%- if project_img -%}
-    <img id="{{ project_id }}-img" class="card-img-top" src="{{ project_img }}" alt="{{ project_name }}" />
+    <img
+      id="{{ project_id }}-img"
+      class="card-img-top"
+      src="{{ project_img }}"
+      alt="{{ project_name }}"
+    />
     {%- endif -%}
     <div class="card-body">
-      <h5 class="card-title project-name">
-          {%- if project_type == "remote" -%}
-          <i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |&nbsp;
-          {%- endif -%}
-        {{ project_name }}
+      <h5 class="card-title project-name mb-0">
+        {%- if project_type == "remote" -%}
+        <i
+          class="fab fa-github"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          data-delay="250"
+          title="GitHub Repository"
+        ></i>
+        |&nbsp; {%- endif -%} {{ project_name }}
       </h5>
-      <p class="card-text project-desc">{{ project_desc }}</p>
+      {%- if project_date -%}
+      <small class="project-date">{% include elements/date-localized.html date=project_date %}</small>
+      {%- endif -%}
+      <p class="card-text project-desc mt-1">{{ project_desc }}</p>
       <p class="card-text project-tools">
         {%- if project_status -%}
-        <span class="badge badge-pill badge-primary ml-1 project-status">{{ project_status }}</span>
-        {%- endif -%}
-        {%- for tool in project_tools -%}
-        <span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
+        <span class="badge badge-pill badge-primary ml-1 project-status"
+          >{{ project_status }}</span
+        >
+        {%- endif -%} {%- for tool in project_tools -%}
+        <span class="badge badge-pill text-primary border border-primary ml-1"
+          >{{ tool }}</span
+        >
         {%- endfor -%}
       </p>
     </div>

@@ -1,0 +1,3 @@
+{%- assign en_date = include.date | date: "%d %b %Y" -%}
+{%- assign pt_date = en_date | replace: "Feb", "Fev" | replace: "Apr", "Abr" | replace: "May", "Mai" | replace: "Aug", "Ago" | replace: "Sep", "Set" | replace: "Oct", "Out" | replace: "Dec", "Dez" -%}
+<span class="lang-pt">{{ pt_date }}</span><span class="lang-en" style="display:none">{{ en_date }}</span>

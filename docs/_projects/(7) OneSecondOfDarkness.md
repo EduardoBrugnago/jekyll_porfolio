@@ -1,4 +1,5 @@
 ---
+date: 2018-09-24
 name: One Second of Darkness
 name_en: One Second of Darkness
 status: Demo

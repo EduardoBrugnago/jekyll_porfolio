@@ -1,4 +1,5 @@
 ---
+date: 2026-02-01
 name: Tabuleiro da Economia Circular
 name_en: Circular Economy Board Game
 status: Publicado

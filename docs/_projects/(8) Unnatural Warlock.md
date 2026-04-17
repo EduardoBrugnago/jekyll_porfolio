@@ -1,4 +1,5 @@
 ---
+date: 2018-07-10
 name: Unnatural Warlock
 name_en: Unnatural Warlock
 status: Conceito

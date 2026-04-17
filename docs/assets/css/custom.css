@@ -1,6 +1,8 @@
 /* Blog Post Card Hover Effect - Same as Projects */
 .post.card {
-  transition: transform 400ms, box-shadow 400ms;
+  transition:
+    transform 400ms,
+    box-shadow 400ms;
 }
 
 .post.card:hover {
@@ -72,3 +74,67 @@
   border-bottom-color: #ffadad;
 }
 
+/* Page date style */
+.page-date {
+  color: #0e0e0e;
+  font-weight: bold !important;
+  font-size: 1.125rem;
+  padding-bottom: 1px;
+  border-bottom: 2px solid #0e0e0e;
+  display: inline-block;
+  margin-top: 26px;
+  opacity: 0.4;
+}
+[data-theme="dark"] .page-date {
+  color: #ffadad;
+  border-bottom: 2px solid #ffadad;
+  opacity: 0.6;
+}
+/* Project card date pink underline */
+.project-date {
+  color: #ffadad;
+  border-bottom: 1px solid #ffadad;
+  align-self: flex-start;
+  opacity: 0.8;
+  font-weight: 800;
+}
+[data-theme="dark"] .project-date {
+  color: #ffadad;
+  border-bottom: 1px solid #ffadad;
+  align-self: flex-start;
+  opacity: 0.4;
+}
+
+[data-theme="dark"] 
+/* Project card body gap */
+.project.card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Other Projects - disable animated underline on hover */
+.other-projects-row a.card::after,
+.other-projects-row .card-body a::after {
+  display: none !important;
+}
+
+/* Other Projects section - equal height cards */
+.other-projects-row > div > div,
+.other-projects-row > div > div > .card {
+  width: 100%;
+  height: 100%;
+}
+
+.other-projects-row > div > div > .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.other-projects-row > div > div > .card .card-img-top {
+  margin-top: 0;
+}
+
+.other-projects-row > div > div > .card .card-body {
+  flex: 1;
+}

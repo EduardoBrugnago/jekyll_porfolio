@@ -3,5 +3,43 @@ layout: default
 ---
 
 <div class="col-lg-10 mx-auto mt-5 markdown-body">
-  {{ content }}
+  {%- if page.collection == "projects" -%}
+  <div>
+  <a
+    href="javascript:history.back()"
+    class="btn btn-outline-primary btn-sm"
+  >
+    <i class="fas fa-arrow-left"></i>
+    <span class="lang-pt">Voltar</span>
+    <span class="lang-en" style="display: none">Back</span>
+  </a>
+  </div>
+  {%- endif -%} {%- if page.date -%}
+  <p class="page-date">{% include elements/date-localized.html date=page.date %}</p>
+  {%- endif -%} {{ content }} {%- if page.collection == "projects" -%}
+  <hr class="mt-5" />
+  <h4 class="lang-pt">Outros Projetos:</h4>
+  <h4 class="lang-en" style="display: none">Other Projects:</h4>
+  <div class="row mt-3 other-projects-row">
+    {%- assign sorted_projects = site.projects | sort: "date" | reverse -%} {%-
+    assign count = 0 -%} {%- for project in sorted_projects -%} {%- if
+    project.url != page.url and count < 3 -%} {%- assign count = count | plus: 1
+    -%} {%- assign project_type = "local" -%} {%- assign project_id =
+    project.name | slugify -%} {%- assign project_img = project.image -%} {%-
+    assign project_name = project.name -%} {%- assign project_desc =
+    project.description -%} {%- assign project_tools = project.tools -%} {%-
+    assign project_name_en = project.name_en -%} {%- assign project_desc_en =
+    project.description_en -%} {%- assign project_tools_en = project.tools_en
+    -%} {%- assign project_date = project.date -%} {%- assign project_status =
+    project.status -%} {%- assign project_status_en = project.status_en -%} {%-
+    assign project_url = project.url | relative_url -%} {%- assign external =
+    false -%}
+
+    <div class="col-md-4 col-12 mb-3 d-flex">
+      {% include projects/project-card.html %}
+    </div>
+
+    {%- endif -%} {%- endfor -%}
+  </div>
+  {%- endif -%}
 </div>
