@@ -75,8 +75,8 @@ The game was developed in <strong>Unity</strong>, with support for browsers and 
 
 {% capture carousel_images %}
 /assets/images/Circular/Prints-Reconstuir/Captura de tela 2026-06-26 105658.png
-/assets/images/Circular/Prints-Reconstuir/Captura de tela 2026-06-26 105841.png
 /assets/images/Circular/Prints-Reconstuir/Captura de tela 2026-06-26 105942.png
+/assets/images/Circular/Prints-Reconstuir/Captura de tela 2026-06-26 105841.png
 {% endcapture %}
 
 {% capture carousel_captions %}
