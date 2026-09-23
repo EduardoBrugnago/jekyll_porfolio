@@ -17,8 +17,8 @@ const translations = {
     about: {
       title: "Sobre Mim",
       greeting: "Oi eu sou o",
-      intro_p1: "Sou bacharel em Design de Jogos, com experiência prática como programador e game designer. Possuo conhecimentos em desenvolvimento de back-end com Java (Spring Boot, Node e Netty) e front-end com CSS, HTML e TypeScript (ReactJS, React Native), além de desenvolvimento de jogos com Unity e Godot. Tenho experiência com metodologias ágeis, treinamento e orientação de estagiários e profissionais juniores.",
-      intro_p2: "Meu diferencial é a versatilidade entre desenvolvimento web, mobile e jogos, com habilidade para adaptação e rápida absorção de novas tecnologias para necessidades específicas de cada projeto. Sou apaixonado por inovação e desafios, busco sempre conhecer bem cada área no desenvolvimento de jogos e web pra facilitar a comunicação e ter uma noção melhor de escopo na hora de planejar e desenvolver.",
+      intro_p1: "Sou formado em Design de Jogos e possuo experiência prática como programador e designer de jogos. Tenho conhecimento em desenvolvimento de jogos com Unity (C#) e Godot, além de desenvolvimento back-end utilizando Node (TypeScript), Netty (Java) para jogos e Spring Boot para uso comercial. Tenho experiência com metodologias ágeis, treinamento e orientação de estagiários.",
+      intro_p2: "Meu diferencial é a versatilidade entre gerenciamento de projetos e programação, com a capacidade de me adaptar e assimilar rapidamente novas tecnologias para atender às necessidades específicas de cada projeto. Sou apaixonado por inovação e desafios, e sempre busco conhecer bem cada área do desenvolvimento de jogos para facilitar a comunicação e ter uma melhor noção do escopo durante o planejamento e o desenvolvimento.",
       game_dev_skills: "Design de Jogos",
       programming_skills: "Programação"
     }
@@ -41,8 +41,8 @@ const translations = {
     about: {
       title: "About Me",
       greeting: "Hi, I'm",
-      intro_p1: "I have a bachelor's degree in Game Design, with practical experience as a programmer and game designer. I have knowledge in back-end development with Java (Spring Boot, Node, and Netty) and front-end with CSS, HTML, and TypeScript (ReactJS, React Native), as well as game development with Unity and Godot. I have experience with agile methodologies, training and mentoring interns and junior professionals.",
-      intro_p2: "My strength is versatility across web, mobile, and game development, with the ability to adapt and quickly absorb new technologies for the specific needs of each project. I'm passionate about innovation and challenges, always seeking to understand each area of game and web development well to facilitate communication and have a better sense of scope when planning and developing.",
+      intro_p1: "I have a bachelor's degree in Game Design, with practical experience as a programmer and game designer. I have knowledge in game development with Unity (C#) and Godot, in addition to back-end development using Node (TypeScript), Netty (Java) for games and Spring Boot for commercial use. I have experience with agile methodologies, training and mentoring of interns",
+      intro_p2: "My differential is the versatility between project management and programming, with the ability to adapt and quickly absorb new technologies for the specific needs of each project. I am passionate about innovation and challenges, I always seek to know each area of game development well to facilitate communication and to have a better notion of scope when planning and developing.",
       game_dev_skills: "Game Dev. Skills",
       programming_skills: "Programming Skills"
     }
